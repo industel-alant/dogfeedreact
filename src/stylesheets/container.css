@@ -1,0 +1,25 @@
+.container {
+    position: inline;
+    top: 0;
+    padding: 80px 20px 20px 20px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    overflow-y: auto; /* To have a scrollbar if needed */
+    background-color: #F6F5AE;
+  }
+  
+  @media (max-device-width: 480px) and (orientation: landscape) {
+    .container{
+      max-height: 200px; /* Lower the max-height for smaller devices */
+    }
+  }
+  
+  @media (min-width: 768px) {
+     .container {
+      overflow-y: visible; /* Reset overflow in large displays */
+    }
+   }
+
+   
+

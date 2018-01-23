@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Slab', serif;
+}
+
+p, h2, {
+  color: black;
+}
+
+table {
+  text-align: left;
+}
+
+td, th {
+  padding: 2px;
+}

@@ -1,0 +1,28 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 20px;
+    height: auto;
+    max-height: 340px; /* Have a max-height */
+    overflow-y: auto; /* To have a scrollbar if needed */
+    background-color: #2E86AB;
+    margin-bottom: 80px;
+  }
+  
+  @media (max-device-width: 480px) and (orientation: landscape) {
+    .header {
+      max-height: 200px; /* Lower the max-height for smaller devices */
+    }
+  }
+  
+  @media (min-width: 768px) {
+     .header {
+      overflow-y: visible; /* Reset overflow in large displays */
+    }
+   }
+
+   h1 {
+       color: white;
+   }
