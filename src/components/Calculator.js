@@ -93,6 +93,7 @@ export const Calculator = ( {age,
         should last {name} around {howLong(amount,weight,age)} days.
         Costing you £{perMealCost(cost , amount , weight,age)} per meal.
     </p>
+    <h5>Bought to you in conjunction with Snoop & Dexter</h5>
     </div>
 )
     
