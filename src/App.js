@@ -9,7 +9,9 @@ constructor(props) {
   super(props) 
     this.state = {
       NameText: " ",
-      WeightValue: 0
+      WeightValue: 0,
+      AmountValue: 0,
+      CostValue: 0
     }
   }
 
@@ -25,6 +27,22 @@ constructor(props) {
     })
   }
 
+  AmountUpdate(value) {
+    this.setState(
+      {
+        AmountValue: value
+      }
+    )
+  }
+
+  CostUpdate(value) {
+    this.setState(
+      {
+        CostValue: value
+      }
+    )
+  }
+
 
   render() {
     return (
@@ -32,14 +50,16 @@ constructor(props) {
       
       <Header />
       <Calculator name = {this.state.NameText}
-                  amount = {5000}
-                  cost = {22.20}
-                  age =  {5}
+                  amount = {this.state.AmountValue}
+                  cost = {this.state.CostValue}
+                  age =  {13}
                   weight = {this.state.WeightValue}
                   />
       <DogDetailsForm
       NameUpdate={this.NameUpdate.bind(this)}
       WeightUpdate={this.WeightUpdate.bind(this)}
+      TheAmountValue={this.AmountUpdate.bind(this)}
+      CostValue={this.TheCostUpdate.bind(this)}
       />
       </div>
     );
